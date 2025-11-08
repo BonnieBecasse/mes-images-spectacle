@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Bonnie Bécasse — Dossier de presse</title>
+
+  <!-- Préchargement des polices pour un affichage plus rapide -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+:root{--main:#e1d2cb;--accent:#cdb7a9;--text:#222;--white:#fff;--muted:#6f6059;--maxw:1024px}
+body{margin:0;background:linear-gradient(180deg,var(--main),#efe1d7);font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;color:var(--text);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;min-height:100vh}
+.wrap{max-width:var(--maxw);margin:28px auto;border-radius:10px;overflow:hidden;box-shadow:0 18px 50px rgba(16,12,8,.12);background:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160"><filter id="n"><feTurbulence baseFrequency="0.8" numOctaves="2" stitchTiles="stitch"/></filter><rect width="160" height="160" filter="url(%23n)" opacity="0.03" fill="white"/></svg>') repeat}
+.page{opacity:0;transform:translateY(6px);animation:appear .5s ease forwards;background:linear-gradient(180deg,rgba(255,255,255,.02),transparent)}
+@keyframes appear{to{opacity:1;transform:translateY(0)}}
+header.cover{display:flex;align-items:stretch;min-height:520px;gap:0}
+.cover .photo{flex:1;overflow:hidden;position:relative}
+.cover .photo img{width:100%;height:100%;object-fit:cover;transition:transform .4s ease;display:block}
+.cover .photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.18),rgba(0,0,0,.08));mix-blend-mode:multiply}
+.cover .meta{flex:0 0 420px;padding:52px 44px;display:flex;flex-direction:column;justify-content:center;background:rgba(0,0,0,.22);backdrop-filter:blur(3px);border-left:4px solid rgba(255,255,255,.12)}
+h1{font-family:'Playfair Display',serif;font-size:40px;line-height:1.02;margin:0 0 8px;color:var(--white);text-transform:uppercase;letter-spacing:1px;text-shadow:0 6px 18px rgba(0,0,0,.22)}
+p.lead{margin:0;color:rgba(255,255,255,.96);font-size:16px;font-weight:500}
+p.exergue{margin-top:18px;font-style:italic;color:rgba(255,255,255,.94);font-size:14px;line-height:1.4}
+main{padding:40px 56px 48px}
+.section{display:flex;gap:34px;align-items:flex-start;margin-bottom:42px}
+.col{flex:1}
+.col.wide{flex:1.6}
+.title{font-family:'Playfair Display',serif;font-size:20px;margin:0 0 8px;color:#2b2420;display:block}
+.title .subtitle{font-size:90%;font-weight:700;font-style:italic;color:var(--muted);display:inline-block;margin-left:6px}
+.body{color:var(--muted);line-height:1.65;font-size:15px}
+.photo-inline{width:100%;border-radius:8px;overflow:hidden;box-shadow:0 12px 30px rgba(8,6,4,.08);background:#eee}
+.photo-inline img{width:100%;height:100%;object-fit:cover;display:block}
+a.photo-link{display:block;transition:opacity .3s ease}
+a.photo-link:hover{opacity:.9}
+.concert-list{margin:0;padding-left:18px}
+.concert-list li{margin-bottom:4px}
+footer{padding:20px 56px;display:flex;justify-content:space-between;align-items:center;border-top:1px solid rgba(0,0,0,.03)}
+.contact{font-size:14px;color:var(--muted)}
+/* SECTION À L’AUBE DU NOUVEAU MONDE */
+.bg-nature{background:url('https://raw.githubusercontent.com/AmLarac/mes-images-spectacle/refs/heads/main/fond-de-feuilles-sechees-en-beige.jpg') no-repeat left bottom;background-size:cover;position:relative;min-height:700px;display:flex;align-items:center;justify-content:flex-end;margin:0 -56px 42px;overflow:hidden}
+.bg-nature .overlay{width:100%;height:100%;padding:60px 100px 60px 200px;box-sizing:border-box;background:linear-gradient(to left,rgba(255,255,255,.8) 0,rgba(255,255,255,.5) 40%,rgba(255,255,255,.25) 70%,transparent 100%);display:flex;justify-content:flex-end;align-items:center}
+.bg-nature .col.right{max-width:520px;background:rgba(255,255,255,.55);padding:28px 36px;border-radius:10px;box-shadow:0 4px 20px rgba(0,0,0,.06)}
+/* SECTION LE BAUME ET LA LOUPE */
+.bg-craft{background:url('https://raw.githubusercontent.com/AmLarac/mes-images-spectacle/main/des-brindilles-sur-du-papier-craft.jpg') no-repeat right bottom;background-size:cover;position:relative;min-height:700px;display:flex;align-items:center;justify-content:flex-start;margin:0 -56px 42px;overflow:hidden}
+.bg-craft .overlay{width:100%;height:100%;padding:60px 200px 60px 100px;box-sizing:border-box;background:linear-gradient(to right,rgba(255,255,255,.8) 0,rgba(255,255,255,.5) 40%,rgba(255,255,255,.25) 70%,transparent 100%);display:flex;justify-content:flex-start;align-items:center}
+.bg-craft .col.left{max-width:520px;background:rgba(255,255,255,.55);padding:28px 36px;border-radius:10px;box-shadow:0 4px 20px rgba(0,0,0,.06)}
+/* SECTION CONTACT */
+.bg-contact{background:url('https://raw.githubusercontent.com/AmLarac/mes-images-spectacle/refs/heads/main/fleurs-sauvages-seches-sur-texture-de-bois.jpg') no-repeat left bottom;background-size:cover;position:relative;min-height:420px;display:flex;align-items:center;justify-content:flex-end;margin:0 -56px;margin-top:20px;overflow:hidden}
+.bg-contact .overlay{width:100%;height:100%;padding:40px 80px 40px 200px;box-sizing:border-box;background:linear-gradient(to left,rgba(255,255,255,.9) 0,rgba(255,255,255,.65) 35%,rgba(255,255,255,.3) 70%,transparent 100%);display:flex;justify-content:flex-end;align-items:center}
+.bg-contact .col.right{max-width:360px;background:rgba(255,255,255,.7);padding:22px 30px;border-radius:10px;box-shadow:0 4px 18px rgba(0,0,0,.06);color:#3a312d}
+/* RESPONSIVE */
+@media (max-width:980px){
+  .cover{flex-direction:column}
+  .cover .meta{padding:28px}
+  .section{flex-direction:column;margin-bottom:32px}
+  .wrap{margin:12px}
+  h1{font-size:32px}
+  .title .subtitle{display:block;margin-left:0;margin-top:4px}
+  .bg-nature,.bg-craft,.bg-contact{margin:0;min-height:auto;justify-content:center}
+  .bg-nature .overlay,.bg-craft .overlay,.bg-contact .overlay{padding:32px 20px;background:rgba(255,255,255,.94);justify-content:center}
+  .bg-nature .col.right,.bg-craft .col.left,.bg-contact .col.right{max-width:100%;background:rgba(255,255,255,.98)}
+}
+  </style>
+</head>
+<body>
+  <div class="wrap page">
+    <!-- COUVERTURE -->
+    <header class="cover">
+      <div class="photo">
+        <img id="cover-img" src="https://raw.githubusercontent.com/AmLarac/mes-images-spectacle/refs/heads/main/Photo%201.jpg" alt="Bonnie Bécasse — affiche">
+      </div>
+      <div class="meta" role="banner">
+        <h1>BONNIE BÉCASSE</h1>
+        <p class="lead">CHANSON NATURALISTE</p>
+        <p class="exergue">
+          "Triple buse, docile princesse<br>
+          Volatile de la pire espèce<br>
+          Voilà qu’on nous dessine une prison sans cage"
+        </p>
+      </div>
+    </header>
+
+    <main>
+      <!-- PROLOGUE + FICHE RAPIDE -->
+      <section class="section" aria-labelledby="presentation-title">
+        <div class="col wide">
+          <h2 id="presentation-title" class="title">
+            Portrait d'une espèce menacée – <span class="subtitle">Prologue</span>
+          </h2>
+          <div class="body">
+            <p><em>C’est un oiseau discret donc on ne sait s’il va annoncer le printemps ou s’il est porteur de mauvaises nouvelles. À la frontière entre la beauté de l’invisible et le malheur le plus sauvage, Bonnie Bécasse se pose là, abordant la vie comme on rentre dans un mur, se cognant sans cesse à la réalité, sans jamais renoncer à la poésie.</em></p>
+            <p><em>Bien que cela soit tentant, il faudrait être fou pour lui clouer le bec.</em></p>
+          </div>
+        </div>
+
+        <div class="col">
+          <h2 class="title">Fiche rapide</h2>
+          <div class="body">
+            <p><strong>Format :</strong> solo — guitare & chant</p>
+            <p><strong>Genre :</strong> chanson française / poétique</p>
+            <p><strong>Dates passées :</strong></p>
+            <ul class="concert-list">
+              <li><strong>À Thou Bout d’Chant</strong> — 24 mai 2025</li>
+              <li><strong>Médiathèque de Boën-sur-Lignon</strong> — 5 nov 2025</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- À L’AUBE DU NOUVEAU MONDE -->
+      <section class="section bg-nature" aria-labelledby="univers-title">
+        <div class="overlay">
+          <div class="col right">
+            <h2 id="univers-title" class="title">
+              À l’aube du nouveau monde – <span class="subtitle">univers artistique</span>
+            </h2>
+            <div class="body">
+              <p><strong>À la manière des naturalistes du siècle dernier</strong>, Bonnie Bécasse observe le monde avec <em>curiosité</em> et <em>inquiétude</em>.</p>
+
+              <p>Dans ce nouveau millénaire, où tout est en perpétuel mouvement, <strong>elle collectionne et classe</strong> inlassablement <strong>les émotions humaines</strong>, dévoilant un <strong>bestiaire fabuleux</strong> où l’humain et l’animal ne font qu’un, luttant pour leur survie <strong>dans un monde résolument hostile.</strong></p>
+
+              <p>Sur scène s’exhibe une <em>constellation d’étranges merveilles</em>, empreinte du <strong>chaos</strong> et des <strong>incertitudes</strong> qui tourmentent notre créature hybride, mi-femme, mi-volatile. Des reliques du passé, entreposées çà et là, nous invitent à <strong>perdre nos repères pour mieux nous retrouver.</strong></p>
+
+              <p><em>Ici, il n’est pas question d’âme mais de matière.</em></p>
+
+              <p>À l’aube du nouveau monde, il faut aussi apprendre à <strong>s’affranchir des injonctions</strong> — celles qui empêchent d’être soi. Loin d’être une « bécasse », notre héroïne s’est choisi <strong>un pseudonyme</strong> à la hauteur de ses ambitions, <strong>qui n’est pas sans rappeler <em>Bonnie Parker</em></strong>, femme intrépide et dangereuse, mais aussi <em>Anne Bonny</em>, la pirate la plus célèbre de l’histoire.</p>
+
+              <p>S’il y a bien une chose que Bonnie Bécasse revendique, c’est la volonté de <strong>s’extraire des cases — pour ne pas dire des cages</strong>. La cage, justement, que représentent <strong>les corsets</strong> et autres toilettes <strong>pour les femmes de l’époque</strong>, figurée sur scène par une <em>jupe crinoline</em> entravant le mouvement.</p>
+
+              <p>Véritable <strong>cabinet de curiosités contemporaines</strong>, l’univers de Bonnie Bécasse met en lumière la <em>fragilité du vivant</em> et la <em>résistance du féminin</em>.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- LIVE CAPTATION -->
+      <section class="section" aria-labelledby="live-title">
+        <div class="col wide">
+          <h2 id="live-title" class="title" style="font-size:22px; margin-bottom:16px;">
+            <strong>Découvrir Bonnie Bécasse en LIVE :</strong>
+          </h2>
+          <div class="photo-inline" style="max-width:95%; margin:0;">
+            <a href="https://www.youtube.com/watch?v=b_HCSE-8eHY" target="_blank" rel="noopener"
+               aria-label="Regarder la captation live de Bonnie Bécasse" class="photo-link">
+              <img src="https://raw.githubusercontent.com/AmLarac/mes-images-spectacle/refs/heads/main/Capture%20LIVE.png" alt="Bonnie Bécasse — Capture du clip live">
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- LE BAUME ET LA LOUPE -->
+      <section class="section bg-craft" aria-labelledby="intentions-title">
+        <div class="overlay">
+          <div class="col left">
+            <h2 id="intentions-title" class="title">
+              Le baume et la loupe – <span class="subtitle"><em>identité musicale</em></span>
+            </h2>
+            <div class="body">
+              <p><strong>Portée par une voix profonde</strong> et un <em>imaginaire foisonnant</em>, Bonnie Bécasse trace une ligne fragile entre <strong>chanson poétique</strong>, <strong>naturaliste</strong> et <strong>engagée</strong>.</p>
+
+              <p>Entre la <strong>verve brute</strong> d’un <em>Bertrand Belin</em> et la <strong>délicatesse</strong> d’une <em>Emily Loizeau</em>, son univers sonore invite à une <strong>écoute suspendue</strong> — un espace où <strong>poésie et chair ne font plus qu’un.</strong></p>
+
+              <p>Seule sur scène, sa musique se déploie dans une <strong>forme épurée</strong>, presque <em>organique</em> : guitare et voix suffisent à faire naître <strong>des paysages émotionnels d’une rare intensité</strong>. Dans cette forme acoustique et minimaliste, la voix occupe l’espace comme une <strong>présence primitive</strong>, animale, presque <em>tellurique</em>.</p>
+
+              <p>Ses textes incarnés explorent <strong>failles</strong> et <strong>révoltes</strong>, et sont peuplés d’<em>animaux-totems</em> — lièvre, libellule, cochon, oiseaux — autant d’allégories de la <strong>fuite</strong>, de la <strong>résistance</strong> et du <strong>désir d’émancipation</strong>.</p>
+
+              <p><em>Sorte de vanité du XXIᵉ siècle</em>, sa chanson <strong>dissèque les émotions à vif</strong>, dans la volonté de <strong>tout montrer</strong>. Ici, la poésie agit comme <strong>un baume et une loupe</strong> : elle <em>révèle</em>, <em>console</em>, et rappelle que tout, toujours, mérite d’être vu — <em>même le plus imparfait</em>.</p>
+
+              <p><strong>Une écriture sincère et viscérale</strong>, où la <em>fragilité devient un territoire à défendre</em>.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- DIMENSION FÉMINISTE -->
+      <section class="section" aria-labelledby="feminisme-title">
+        <div class="col">
+          <div class="photo-inline">
+            <img src="https://raw.githubusercontent.com/AmLarac/mes-images-spectacle/refs/heads/main/WhatsApp%20Image%202025-02-02%20at%2008.42.15.jpeg" alt="Photo de scène — crinoline">
+          </div>
+        </div>
+        <div class="col wide">
+          <h2 id="feminisme-title" class="title">
+            De la voix à la révolte – <span class="subtitle">dimension féministe</span>
+          </h2>
+          <div class="body">
+            <p><strong>Plus qu’un lieu de représentation</strong>, la scène, chez Bonnie Bécasse, devient <strong>un espace de parole et de réparation</strong>.</p>
+
+            <p>Ses textes, traversés par une <strong>énergie féministe</strong> et une <em>grande sensibilité</em>, abordent la question du <strong>corps des femmes</strong>, la <strong>violence symbolique et réelle</strong>, et la nécessité de reprendre voix.</p>
+
+            <p>Sans être fermée au dialogue, <strong>sa révolte est déterminée</strong> : elle prône la <strong>liberté</strong>, la <strong>dignité</strong> et la <strong>solidarité</strong>.</p>
+
+            <p>La scène devient ainsi <strong>l’atelier d’un réapprentissage collectif</strong> : <em>dire</em>, <em>nommer</em>, <em>retrouver le contrôle</em> de son image et de son récit.</p>
+
+            <p><strong>La poésie</strong>, chez Bonnie, n’est pas une échappatoire mais <strong>une arme douce</strong> — une façon d’<em>ouvrir des brèches</em>, d’<em>insuffler des possibles</em> et de proposer <strong>une réflexion qui soigne autant qu’elle interpelle</strong>.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- BIOGRAPHIE -->
+      <section class="section" aria-labelledby="bio-title">
+        <div class="col wide">
+          <h2 id="bio-title" class="title">
+            La bécasse – <span class="subtitle">biographie</span>
+          </h2>
+          <div class="body">
+            <p><strong>Bonnie Bécasse</strong> est le projet musical porté par <strong>Amandine Larachiche</strong>, musicienne, interprète, autrice-compositrice – mais aussi <strong>comédienne</strong>. Née du besoin vital d’exprimer une <em>poésie brute et viscérale</em>, cette création récente s’impose déjà par la <strong>singularité de son univers</strong> et la <strong>force de son interprétation</strong>.</p>
+
+            <p>Amandine n’est pas « née » dans la musique : elle l’a rencontrée à <strong>24 ans</strong>, en chantant sur le parvis d’une gare. L’espace public devient alors son premier terrain d’expression, où elle apprend la <em>persévérance</em>, la <em>débrouille</em> et surtout <strong>l’art de captiver un auditoire</strong>.</p>
+
+            <p>À la manière de <em>Claire Diterzi</em>, elle explore des univers multiples, mêlant <strong>cabaret, poésie et théâtre</strong>, et place la <em>dramaturgie</em> au cœur de son processus de création, <strong>à travers des personnages</strong>, un costume, une histoire.</p>
+
+            <p>En <strong>janvier 2025</strong>, Bonnie Bécasse est sélectionnée au <strong>tremplin À Thou Bout d’Chant</strong> à Lyon et s’y produit en <strong>mai 2025</strong>. L’<strong>enregistrement d’un EP</strong> est prévu pour <strong>2026</strong>.</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="photo-inline">
+            <img src="https://raw.githubusercontent.com/AmLarac/mes-images-spectacle/main/Photo%202.jpg" alt="Portrait — Amandine Larachiche">
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT SUR IMAGE -->
+      <section class="bg-contact" aria-labelledby="contact-title">
+        <div class="overlay">
+          <div class="col right">
+            <h2 id="contact-title" class="title">Contact</h2>
+            <div class="body contact">
+              <p><strong>Booking / Presse :</strong> Amandine Larachiche</p>
+              <p><strong>Email :</strong> <a href="mailto:bonniebecasse@gmail.com">bonniebecasse@gmail.com</a></p>
+              <p><strong>Instagram :</strong> <a href="https://www.instagram.com/bonniebecasse" target="_blank">@bonniebecasse</a></p>
+              <p><strong>Facebook :</strong> <a href="https://www.facebook.com/bonniebecasse" target="_blank">facebook.com/bonniebecasse</a></p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="contact">bonniebecasse@gmail.com · @bonniebecasse</div>
+      <div style="font-size:12px;color:var(--muted)">Dossier de presse — Bonnie Bécasse</div>
+    </footer>
+  </div>
+</body>
+</html>
